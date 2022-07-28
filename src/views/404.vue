@@ -34,6 +34,10 @@
 </script>
 
 <style scoped>
+  *{
+    margin: 0;
+    padding: 0;
+  }
   .app-container {
     width: 80%;
     margin: 120px auto;

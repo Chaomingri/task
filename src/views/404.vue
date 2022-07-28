@@ -17,7 +17,7 @@
 </template>
 
 <script>
-  import img_404 from '@/assets/images/gif_404.gif';
+  import img_404 from '@/assets/images/404.png';
   export default {
     name: 'wrongPage',
     data() {

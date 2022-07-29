@@ -3,7 +3,7 @@
     class="scroll-container"
     ref="scrollContainer"
     @wheel.prevent="handleScroll"
-  >6
+  >
     <div
       class="scroll-wrapper"
       ref="scrollWrapper"

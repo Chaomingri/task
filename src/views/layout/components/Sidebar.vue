@@ -7,6 +7,8 @@
         background-color="#545c64"
         text-color="#fff"
         active-text-color="#ffd04b"
+        :collapse = !sidebar.status
+        Lcollapse-transition = false
       >
         <el-submenu index="1">
           <template slot="title">
@@ -45,9 +47,16 @@
 
 <script>
 import ScrollBar from "@/components/ScrollBar";
+import {mapState} from "vuex"
 export default {
   name: "Sidebar",
   components: { ScrollBar },
+  created() {
+    console.log(this)
+  },
+  computed:{
+    ...mapState("app",['sidebar'])
+  }
 };
 </script>
 
@@ -59,5 +68,9 @@ export default {
   width: 200px;
   height: 100%;
   position: fixed;
+  transition: width 0.28s;
+}
+.hideSidebar .sidebar-container{
+  width: 64px;
 }
 </style>
